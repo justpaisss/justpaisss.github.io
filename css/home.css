@@ -1,0 +1,247 @@
+body{
+    background-color: rgb(32, 32, 32);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+ 
+  header {
+    width: 100%;
+    background-color: transparent;
+    padding: 3rem 5rem;
+    position: sticky;
+    top: 1px;
+  }
+  section .title{
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    font-family: south australia;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 69rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 2rem 5rem;
+
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav a {
+    font-size: 17px;
+    font-family: helvetica;
+    text-decoration: none;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  nav a#logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  nav ul a::before {
+    color: #ffffff;
+    font-weight: 600;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+
+  }
+  nav ul a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  #ham-menu {
+    display: none;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  .heading_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .product{
+    height: 69rem;
+    padding-top: 18rem;
+  }
+  .heading_container h2 {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .how_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 45px 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .how_container .card {
+    text-align: center;
+    margin: 10px;
+  }
+  .card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+   .footer{
+    width: 100%;
+    background-color: #ffffff;
+    height: 20rem;
+    margin-top: 25rem;
+    margin-bottom: 0px;
+   }
+  @media only screen and (max-width: 991px) {
+    html {
+      font-size: 56.25%;
+    }
+    header {
+      padding: 2.2rem 5rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    html {
+      font-size: 50%;
+    }
+    #ham-menu {
+      display: block;
+      color: #ffffff;
+    }
+    nav a#logo,
+    #ham-menu {
+      font-size: 17px;
+    }
+    nav ul {
+      background-color: black;
+      position: fixed;
+      left: -100vw;
+      top: 73.6px;
+      width: 100vw;
+      height: calc(100vh - 73.6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transition: 1s;
+      gap: 0;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    html {
+      font-size: 46.87%;
+    }
+    header {
+      padding: 2rem 3rem;
+    }
+    nav ul {
+      top: 65.18px;
+      height: calc(100vh - 65.18px);
+    }
+    section .title h1{
+      display: flex;
+      color: #ffffff;
+      font-size: 90px;
+      text-align: center;
+      font-family: south australia;
+    }
+    .card {
+      width: 100px;
+      height: 180px;
+      background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+      border-radius: 20px;
+      transition: all .3s;
+     }
+     
+     .card2 {
+      width: 100px;
+      height: 180px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      transition: all .2s;
+     }
+     .product{
+      height: 69rem;
+      display: contents;
+    }
+    section .title{
+      margin-top: 10px;
+      color: #ffffff;
+      font-size: 100px;
+      text-align: center;
+      font-family: south australia;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      height: 30rem;
+    }
+    .footer{
+      width: 100%;
+      background-color: #00ff75;
+      height: 20rem;
+      margin-top: 100px;
+      margin-bottom: 0px;
+     }
+     .heading_container h2 {
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  }

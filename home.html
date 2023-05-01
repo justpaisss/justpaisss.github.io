@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>home | silver crush</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" id="logo">Silver Crush</a>
+      <i class="fas fa-bars" id="ham-menu"></i>
+      <ul id="nav-bar">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#product">Product</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="head" id="home">
+      <div class="title">
+        <h1>silver Crush</h1>
+      </div>
+    </div>
+    <div class="product" id="product">
+      <div class="heading_container" >
+        <h2>
+          Product
+        </h2>
+      </div>
+      <div class="how_container">
+        <a href="">
+          <div class="card">
+            <div class="card2">
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="card2">
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="card2">
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="card2">
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="card2">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer">
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script>
+    let hamMenuIcon = document.getElementById("ham-menu");
+    let navBar = document.getElementById("nav-bar");
+    let navLinks = navBar.querySelectorAll("li");
+
+    hamMenuIcon.addEventListener("click", () => {
+      navBar.classList.toggle("active");
+      hamMenuIcon.classList.toggle("fa-times");
+    });
+    navLinks.forEach((navLinks) => {
+      navLinks.addEventListener("click", () => {
+        navBar.classList.remove("active");
+        hamMenuIcon.classList.toggle("fa-times");
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
