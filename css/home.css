@@ -13,7 +13,7 @@ body{
  
   header {
     width: 100%;
-    background-color: transparent;
+    background-color: grey;
     padding: 3rem 5rem;
     position: sticky;
     top: 1px;
